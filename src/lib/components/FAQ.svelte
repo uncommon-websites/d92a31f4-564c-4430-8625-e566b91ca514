@@ -2,27 +2,18 @@
     let openIndex: number | null = 0;
 
     const faqs = [
-        { q: "What is the US Tech Force (Tech Force)?", a: "Tech Force will be an elite group of ~1,000 technology specialists hired by agencies to accelerate artificial intelligence (AI) implementation and solve the federal government's most critical technological challenges. Tech Force will primarily recruit early-career technologists from traditional recruiting channels, along with experienced engineering managers from private sector partners, to serve two-year employment terms in the federal government. Tech Force will include centralized organization and programming and serve as a recruiting platform post-employment." },
-        { q: "What are the key steps in the recruiting process?", a: "Details about the recruiting process..." },
-        { q: "What skills are required?", a: "Details about required skills..." },
-        { q: "Are specific educational credentials required to participate?", a: "Details about credentials..." },
-        { q: "Is there a minimum experience level required to apply?", a: "Details about experience..." },
-        { q: "Is this a political appointment?", a: "Details about political appointment..." },
-        { q: "When am I expected to start?", a: "Details about start date..." },
-        { q: "Where will the employment be located?", a: "Details about location..." },
-        { q: "What is the expected compensation for participants?", a: "Details about compensation..." },
-        { q: "What projects will participants work on?", a: "Details about projects..." },
-        { q: "What agencies will participate in Tech Force?", a: "Details about agencies..." },
-        { q: "What companies are participating in Tech Force?", a: "Details about companies..." },
-        { q: "How do private sector companies partner with Tech Force?", a: "Details about partnerships..." },
-        { q: "Are there any other benefits?", a: "Details about benefits..." },
-        { q: "What is the duration of the program?", a: "Details about duration..." },
-        { q: "What happens after the employment is completed?", a: "Details about post-employment..." },
-        { q: "What is the duration of Tech Force as a whole?", a: "Details about program duration..." },
-        { q: "Will the program have a political mission?", a: "Details about mission..." },
-        { q: "How do candidates nominated by a private sector company participate? Do they retain their private sector employment?", a: "Details about nomination..." },
-        { q: "Will participants nominated by private sector companies be able to retain their deferred compensation packages (RSUs, options, etc.)?", a: "Details about compensation packages..." },
-        { q: "How is Tech Force related to other government technology programs, including ones at GSA or the United States DOGE Service?", a: "Details about relations..." },
+        { q: "What makes Calamos different from other asset managers?", a: "Calamos has specialized in convertible securities for over 47 years, making us the leading global asset manager in this space. Our proprietary capital structure analysis examines equity, debt, and convertibles across the entire spectrum—a methodology developed by our founder, a former Air Force pilot who applied aviation risk management principles to investing. With $46+ billion in AUM and an institutional-grade research infrastructure, we deliver sophisticated strategies that were traditionally available only to institutional investors." },
+        { q: "What are convertible securities and why are they important?", a: "Convertible securities are hybrid instruments that combine features of both bonds and stocks. They offer downside protection through their bond-like characteristics while providing upside participation through conversion to equity. Our founder, John P. Calamos Sr., recognized through decades of market cycles that convertibles offer superior risk-adjusted returns—protecting capital during downturns while capturing gains during rallies." },
+        { q: "How does Calamos serve Registered Investment Advisors (RIAs)?", a: "We partner with RIAs by providing access to institutional-grade alternative investment strategies that help advisors serve sophisticated clients. Through industry conferences and educational workshops, we simplify complex alternative investments and provide the research infrastructure, risk management tools, and proven track record that RIAs need to confidently recommend our strategies." },
+        { q: "What is your investment philosophy?", a: "Our philosophy is rooted in rigorous preparation and disciplined risk assessment. As our founder said, 'Investing is like flying an airplane—you better do your homework before you take off.' We practice active management with emphasis on risk mitigation, using our proprietary capital structure analysis to identify opportunities others miss. We don't follow trends—we create them." },
+        { q: "What types of investment strategies does Calamos offer?", a: "We offer a diversified range of strategies including convertible securities, alternative investments, structured products, equity strategies, and fixed income solutions. All are built on our core competency of capital structure analysis and designed to provide institutional-grade sophistication with accessibility for individual investors through their advisors." },
+        { q: "How large is Calamos and how long have you been in business?", a: "Calamos was founded in 1977 and has grown to manage over $46 billion in assets. We've navigated 47+ years of market cycles, from the founder's initial boutique convertible securities practice to today's diversified global investment firm. This longevity demonstrates our ability to adapt and deliver value through changing market conditions." },
+        { q: "Who leads Calamos today?", a: "John Koudounis serves as CEO with a clear vision: 'Lead the charge in innovation, deliver excellence to our clients and make Calamos the premier alternative management brand.' The family legacy continues with multi-generational leadership involvement, maintaining the founder's disciplined approach while driving innovation." },
+        { q: "What is your approach to risk management?", a: "Risk management is embedded in our DNA. Our founder's aviation background taught him that rigorous preparation and risk assessment are non-negotiable. We apply this discipline through comprehensive capital structure analysis, active portfolio management, and systematic risk monitoring. Our goal is to protect capital while capturing upside—delivering superior risk-adjusted returns across market cycles." },
+        { q: "How does Calamos democratize institutional-grade strategies?", a: "We've built distribution partnerships with RIAs to bring sophisticated strategies to individual investors. By providing educational resources, simplifying complex products, and offering institutional research infrastructure, we make alternative investments accessible to advisors and their clients—expanding beyond the traditional institutional-only model." },
+        { q: "What is your track record during market volatility?", a: "Our founder experienced decades of market cycles and volatility firsthand, which gave him deep conviction in convertible securities' ability to deliver superior risk-adjusted returns. Our 47+ year history includes navigating multiple recessions, market crashes, and recovery periods. This experience informs our active management approach and risk mitigation strategies." },
+        { q: "How do I get started with Calamos as a financial advisor?", a: "We welcome partnerships with RIAs seeking sophisticated investment solutions for their clients. Connect with us through our contact form, attend one of our industry conferences, or join our educational workshops on alternative investments. Our team will work with you to understand your clients' needs and demonstrate how our strategies can enhance your practice." },
+        { q: "What research capabilities support your investment process?", a: "We maintain an institutional-grade research infrastructure with dedicated portfolio managers, research analysts, and trading specialists. Our in-house team conducts fundamental analysis using our proprietary capital structure framework, supported by advanced technology and risk management systems developed over nearly five decades." },
     ];
 
     function toggle(index: number) {
@@ -30,15 +21,15 @@
     }
 </script>
 
-<section class="bg-[#0a0a0a] text-white px-6 md:px-12 py-24">
+<section class="bg-gray-50 text-black px-6 md:px-12 py-24">
     <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl font-medium mb-12">Frequently Asked Questions</h2>
         
-        <div class="border-t border-white/20">
+        <div class="border-t border-black/10">
             {#each faqs as faq, i}
-                <div class="border-b border-white/20">
+                <div class="border-b border-black/10">
                     <button 
-                        class="w-full py-6 flex justify-between items-center text-left hover:text-gray-300 transition-colors"
+                        class="w-full py-6 flex justify-between items-center text-left hover:text-gray-600 transition-colors"
                         onclick={() => toggle(i)}
                         aria-expanded={openIndex === i}
                     >
@@ -46,7 +37,7 @@
                         <span class="text-xl font-light">{openIndex === i ? '×' : '+'}</span>
                     </button>
                     {#if openIndex === i}
-                        <div class="pb-6 text-gray-400 font-light leading-relaxed max-w-4xl">
+                        <div class="pb-6 text-gray-700 font-light leading-relaxed max-w-4xl">
                             {faq.a}
                         </div>
                     {/if}
